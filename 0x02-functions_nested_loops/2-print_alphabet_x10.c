@@ -1,26 +1,19 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * void print_alphabet_x10 - prints alphabet 10 time
- * Return: void
+ * main - print the alphabet
+ *
+ * Return: Always 0 (success)
  */
-
-void print_alphabet_x10(void)
+int main(void)
 {
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	char c;
-	int i = 0;
-
-	while (i < 10)
+	for (i = 0; i < 26; i++)
 	{
-		c = 'a';
-		
-		while (c <= 'z')
-		{
-			_putchar(c);
-			c++;
-		}
-		_putchar('\n');
-		i++;
+		putchar(alp[i]);
 	}
+	putchar('\n');
+	return (0);
 }
